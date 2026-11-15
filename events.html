@@ -10,8 +10,10 @@ main{max-width:1060px}
 .ev-img img{width:300px;height:190px;object-fit:cover;display:block}
 .ev-img.tall img{height:auto;object-fit:contain}
 .ev-cap{font-size:12px;color:#8a8172;margin-top:8px;letter-spacing:.05em}
-.ev-media{margin-top:24px}
-.ev-media img{width:100%;max-height:540px;object-fit:cover;display:block}
+.ev-strip{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.ev-strip .ev-media{flex:1 1 0;min-width:0}
+.ev-strip .ev-media:only-child{flex:0 1 31%}
+.ev-strip .ev-media img{width:100%;height:200px;object-fit:cover;display:block}
 .ev-plate{flex:0 0 300px;height:190px;background:#efe9dd;border:1px solid #ddd4c2;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:.35em;color:#8a7f68;text-transform:uppercase;text-align:center;padding:0 12px}
 .ev-title{flex:1;min-width:0}
 .ev-title h3{font-size:32px;font-weight:600;margin:2px 0 10px;line-height:1.15}
@@ -27,7 +29,7 @@ main{max-width:1060px}
 .ev-col p{margin:0 0 10px}
 .year{font-size:13px;letter-spacing:.25em;color:#8a8172;text-transform:uppercase;margin:44px 0 4px}
 .year:first-of-type{margin-top:26px}
-@media(max-width:760px){.ev-head{flex-wrap:wrap}.ev-img,.ev-plate{flex:1 1 100%}.ev-img img{width:100%}.ev-date{padding-top:0}.ev-cols{flex-direction:column;gap:20px}}
+@media(max-width:760px){.ev-head{flex-wrap:wrap}.ev-img,.ev-plate{flex:1 1 100%}.ev-img img{width:100%}.ev-date{padding-top:0}.ev-cols{flex-direction:column;gap:20px}.ev-strip .ev-media{flex:1 1 45%}.ev-strip .ev-media:only-child{flex:1 1 100%}}
 </style></head>
 <body><header class="site"><nav><a class="brand" href="index.html">ZIJIAN ZHOU</a><a href="index.html">Home</a><a href="social-media.html">Social Media</a><a href="events.html" class="active">Events</a><a href="game-design.html">Game Design</a><a href="cosplay.html">Cosplay</a><a href="art.html">Art</a></nav></header>
 <main>
@@ -78,14 +80,15 @@ main{max-width:1060px}
 <p><a href="https://www.linkedin.com/posts/zijian-melody-zhou_cocreate2026-alibaba-entrepreneurship-ugcPost-7504431953484492800-VkDm/">My post from the event — LinkedIn</a></p>
 </div>
 </div>
+<div class="ev-strip">
 <div class="ev-media"><img src="assets/cocreate-booth.jpg" alt="At the MuseSelect booth, CoCreate 2026"><p class="ev-cap">Working the MuseSelect booth — the brand launched its U.S. Creator Fashion Market at the event</p></div>
 <div class="ev-media"><img src="assets/cocreate-venue.jpg" alt="CoCreate Los Angeles 2026 venue entrance"><p class="ev-cap">The venue entrance — CoCreate Los Angeles 2026, Los Angeles Convention Center</p></div>
 <div class="ev-media"><img src="assets/cocreate-robot.jpg" alt="Humanoid robot on the CoCreate 2026 show floor"><p class="ev-cap">On the show floor — agentic AI was the theme of the 2026 summit</p></div>
-</section>
+</div></section>
 
 <section class="ev">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/lol-mf-lcs.jpg" alt="Miss Fortune with Teemo on the LCS stage, Riot Arena"></div>
+<div class="ev-img"><img src="assets/lcs-stage-wide.jpg" alt="LCS Opening Week stage, Disguised vs Shopify Rebellion — Miss Fortune on the main screen"></div>
 <div class="ev-title"><h3>League of Legends — LCS Opening Week</h3>
 <p class="ev-role">Official Cosplayer · Miss Fortune</p>
 <p class="ev-sub">LCS · Esports stage appearance</p>
@@ -103,10 +106,11 @@ main{max-width:1060px}
 <p><a href="https://www.instagram.com/p/DbW6tz2Gl1H/">Official LCS post</a> · <a href="https://www.instagram.com/reel/DbZYbgKC1i0/">Official LCS reel</a> · <a href="https://www.rednote.com/user/profile/5c0c73b60000000007027b06">More on Xiaohongshu</a></p>
 </div>
 </div>
+<div class="ev-strip">
 <div class="ev-media"><img src="assets/lcs-stage1.jpg" alt="Miss Fortune cosplayer on the LCS stage during Opening Week"><p class="ev-cap">On the LCS stage — official Miss Fortune for Opening Week, Poro in hand</p></div>
 <div class="ev-media"><img src="assets/lcs-screen.jpg" alt="Miss Fortune cosplayer shown on the Riot Arena main screen during champion select"><p class="ev-cap">On the arena's main screen during champion select — with me on stage at the desk (right)</p></div>
-<div class="ev-media"><img src="assets/lcs-stage-wide.jpg" alt="Wide shot of the LCS Opening Week stage with the Miss Fortune cosplayer on the main screen"><p class="ev-cap">Opening Week stage, Disguised vs Shopify Rebellion — my Miss Fortune on the big screen</p></div>
-</section>
+<div class="ev-media"><img src="assets/lol-mf-lcs.jpg" alt="Miss Fortune cosplayer on the LCS stage"><p class="ev-cap">On stage for Opening Week — as featured in the official LCS post</p></div>
+</div></section>
 
 <section class="ev">
 <div class="ev-head">
@@ -301,8 +305,9 @@ main{max-width:1060px}
 <p><a href="https://x.com/_CarolCina_/status/1277530811915329537">Official poster &amp; announcement — X</a> · <a href="https://www.twitch.tv/videos/676894579">Match VOD — Twitch</a> · <a href="https://discord.gg/gH269YeBJ">Tournament Discord</a></p>
 </div>
 </div>
+<div class="ev-strip">
 <div class="ev-media"><img src="assets/vainglory-merch.jpg" alt="Vainglory Eternal Cup custom merchandise — medallions, dog tags and keychain"><p class="ev-cap">Tournament merchandise I produced — custom Eternal Cup medallions (gold / silver / copper), dog tags, and keychains in branded gift boxes</p></div>
-</section>
+</div></section>
 
 <h2 style="margin-top:48px">Regular Conventions</h2>
 <p>Recurring attendee and cosplayer at Southern California conventions: <strong>Anime Expo</strong> (Los Angeles), <strong>WonderCon</strong> (Anaheim), <strong>Anime Los Angeles</strong> (Long Beach), and <strong>Los Angeles Comic Con</strong>.</p>
