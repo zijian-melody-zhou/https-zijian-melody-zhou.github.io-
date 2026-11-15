@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Campaigns & Events — Zijian Zhou</title><link rel="stylesheet" href="styles.css"><style>
 body{background:#f7f3ec}
-main{max-width:none;padding:28px 10px 48px}
+main{max-width:none;padding:28px 16px 48px 6px}
 .ev{border-top:1px solid #d9d2c4;padding:34px 0 30px}
 .ev:last-of-type{border-bottom:1px solid #d9d2c4}
 .ev-head{display:flex;gap:28px;align-items:flex-start}
@@ -32,15 +32,26 @@ main{max-width:none;padding:28px 10px 48px}
 @media(max-width:760px){.ev-head{flex-wrap:wrap}.ev-img,.ev-plate{flex:1 1 100%}.ev-img img{width:100%}.ev-date{padding-top:0}.ev-cols{flex-direction:column;gap:20px}.ev-strip .ev-media{flex:1 1 45%}.ev-strip .ev-media:only-child{flex:1 1 100%}.ev-layout{flex-direction:column}.ev-toc{position:static;border-right:none;border-bottom:1px solid #e3dac7;width:100%;padding-bottom:12px}}
 
 .ev-layout{display:flex;gap:38px;align-items:flex-start}
-.ev-toc{flex:0 0 268px;position:sticky;top:26px;border-right:1px solid #e3dac7;padding-right:20px}
+.ev-toc{flex:0 0 250px;position:sticky;top:26px;border-right:1px solid #e3dac7;padding-right:20px}
 .ev-toc h4{font-size:11px;letter-spacing:.24em;color:#8a8172;text-transform:uppercase;margin:0 0 14px;font-weight:600}
 .ev-toc a{display:block;color:#444;text-decoration:none;font-size:13.5px;padding:4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ev-toc a:hover{color:#a03d2a}
 .ev-toc .toc-group{font-size:11px;letter-spacing:.18em;color:#a39a86;text-transform:uppercase;margin:16px 0 4px}
-.ev-main{flex:1;min-width:0;max-width:1080px}
+.ev-main{flex:1;min-width:0;max-width:1040px;margin-left:auto;margin-right:auto}
 section.ev{scroll-margin-top:26px}
 
 .ev-banner{margin:2px 0 6px}
+.rb-top{display:flex;gap:28px;align-items:flex-start;margin:2px 0 6px}
+.rb-top .rb-cover{flex:1;min-width:0}
+.rb-top .rb-cover img{width:100%;display:block}
+.rb-top .rb-text{flex:1;min-width:0}
+.rb-top .rb-text p{margin:0 0 12px;line-height:1.65;color:#333}
+.rb-strip .ev-media.big{flex:1.7}
+.ev-img.big{flex:0 0 360px}.ev-img.big img{width:360px}
+.ev-img.xl{flex:0 0 400px}.ev-img.xl img{width:400px}
+.ev-strip.sm .ev-media{flex:0 0 23.5%}
+.rb-side{flex:0 0 170px}.rb-side img{width:100%;display:block}
+@media(max-width:760px){.rb-top{flex-direction:column}}
 .ev-banner img{width:100%;height:auto;display:block}
 .ev-flow{font-size:11.5px;letter-spacing:.22em;color:#8a8172;text-transform:uppercase;margin:16px 0 14px}
 .ev-narr p{margin:0 0 12px;line-height:1.65;color:#333;max-width:780px}
@@ -50,57 +61,112 @@ section.ev{scroll-margin-top:26px}
 .ev-links a{white-space:nowrap}
 @media(max-width:760px){.ev-toc a{white-space:normal}}
 </style></head>
-<body><header class="site"><nav><a class="brand" href="index.html">ZIJIAN ZHOU</a><a href="index.html">Home</a><a href="social-media.html">Social Media</a><a href="events.html" class="active">Campaigns & Events</a><a href="game-design.html">Game Design</a><a href="cosplay.html">Cosplay</a><a href="art.html">Art</a></nav></header>
+<body><header class="site" id="top"><nav><a class="brand" href="index.html">ZIJIAN ZHOU</a><a href="index.html">Home</a><a href="events.html" class="active">Campaigns & Events</a><a href="game-design.html">Game Design</a><a href="cosplay.html">Cosplay Showcase</a><a href="art.html">Art Portfolio</a></nav></header>
 <main>
 <div class="ev-layout">
 <nav class="ev-toc">
 <h4>Contents</h4>
+<a href="#stream-operations">Stream Operations</a>
+<a href="#independent-practice">Independent Practice</a>
 <a href="#riftbound">Riftbound — LA Regional Qualifier</a>
 <a href="#cocreate">CoCreate 2026 — Alibaba.com</a>
 <a href="#lcs">LCS Opening Week</a>
 <a href="#wuwa-senior-high">WuWa Senior High — Wuthering Waves</a>
 <a href="#ggwp">Riot GGWP Feature</a>
-<a href="#supplyside">SupplySide West</a>
 <a href="#lunar-new-year">Riot Lunar New Year</a>
+<a href="#aiko-garden">AIKO Garden — Asian American Expo</a>
+<a href="#ocm-foods">OCM Foods — Asian American Expo</a>
+<a href="#master-lee">Master Lee — Dumpling Challenge</a>
+<a href="#acecook-haohao">Acecook Hảo Hảo</a>
+<a href="#supplyside">SupplySide West</a>
 <a href="#night-at-the-harbor">Night at the Harbor — Genshin Fan Event</a>
 <a href="#wuwa-creator">Wuthering Waves Creator Program</a>
 <a href="#genshin-halloween">Genshin Impact Halloween</a>
 <a href="#blaze-to-natlan">Blaze to Natlan — UC Irvine</a>
 <a href="#soragumi">SORAGUMI — In-Store Events &amp; Campaigns</a>
 <a href="#riotling-day">Riotling Day 2022</a>
+<a href="#eipi">EIPI — Social Media Intern</a>
 <a href="#vainglory">Vainglory Eternal Cup 2020</a>
 <a href="#coursework">Coursework Campaigns</a>
 </nav>
 <div class="ev-main">
 <h1>Campaigns & Events</h1>
-<p class="lede">Campaign case studies and player-facing events I have worked on — brand and IP activations, official-cosplayer programs, esports stages, fan conventions, and community events I organized myself. Campaign projects from my USC coursework are added at the end as they are completed. Cosplay photography lives on the <a href="cosplay.html">Cosplay page</a>.</p>
+<p class="lede">Campaign case studies and player-facing events I have worked on — brand and IP activations, official-cosplayer programs, esports stages, fan conventions, and community events I organized myself. Campaign projects from my USC coursework are added at the end as they are completed. Cosplay photography lives on the <a href="cosplay.html">Cosplay Showcase page</a>.</p>
 
 
 <p class="year">2026</p>
 
+<section class="ev" id="stream-operations">
+<div class="ev-head">
+<div class="ev-plate">Stream Ops</div>
+<div class="ev-title"><h3>Stream Operations — Confidential Creator (2M+ Followers)</h3>
+<p class="ev-role">Livestream &amp; Social Media Operations</p>
+<p class="ev-sub">Recurring TikTok live commerce · Paid social + organic</p>
+<p class="ev-loc">Los Angeles, CA</p></div>
+<div class="ev-date">Mar 2026 – Present</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Run livestream and day-to-day social media operations for a confidential creator: recurring TikTok live sessions, real-time performance monitoring, and campaign execution.</li>
+<li>Run paid social promotion alongside organic content, adjusting in real time against live performance.</li>
+<li>Engage the live community throughout each session — reading audience sentiment and feeding it back into pacing and content.</li>
+</ul></div>
+<div class="ev-col"><h4>Results &amp; Impact</h4><ul>
+<li>Livestream sessions generating approximately US$410K in sales (GMV) per session, drawing 30K+ concurrent viewers.</li>
+<li>Campaigns reaching 1M+ impressions.</li>
+<li>Presented as text only to protect the creator's confidentiality.</li>
+</ul></div>
+</div>
+</section>
+<section class="ev" id="independent-practice">
+<div class="ev-head">
+<div class="ev-plate">Independent</div>
+<div class="ev-title"><h3>Independent Practice — Client Influencer &amp; Social Media Services</h3>
+<p class="ev-role">Influencer Relations · Social Media Services</p>
+<p class="ev-sub">Client work through my own business</p>
+<p class="ev-loc">Los Angeles, CA</p></div>
+<div class="ev-date">Ongoing</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Provide influencer-marketing and social media services to brand and creator clients through my own business.</li>
+<li>Direct influencer partnerships, support contract negotiations, and manage event operations and social coverage for major IP activations.</li>
+<li>Alongside client work, my own creator accounts total 20,000+ followers across Instagram, TikTok, Xiaohongshu, and X.</li>
+</ul></div>
+<div class="ev-col"><h4>Results &amp; Impact</h4><ul>
+<li>Implemented strategies that contributed to 240% growth across all platforms in less than a year for an influencer client.</li>
+<li>Client names are confidential; the Vermillion Lab LLC campaigns on this page (Acecook, Master Lee, AIKO Garden, OCM Foods) are the public-facing part of this practice.</li>
+</ul></div>
+</div>
+</section>
 <section class="ev" id="riftbound">
 <div class="ev-head">
 <div class="ev-title"><h3>Riftbound — Los Angeles Regional Qualifier</h3>
-<p class="ev-role">Official Cosplayer · League of Legends</p>
-<p class="ev-sub">Riot Games TCG · Regional Qualifier</p>
+<p class="ev-role">Invited Cosplayer Guest · UVS Games</p>
+<p class="ev-sub">Co-hosted by UVS Games × Riot Games · Riftbound TCG Regional Qualifier</p>
 <p class="ev-loc">Los Angeles Convention Center</p></div>
 <div class="ev-date">Sep 25–27, 2026</div>
 </div>
-<div class="ev-banner"><img src="assets/riftbound-flickr-cover.jpg" alt="Crystal Rose cosplayers at the Riftbound Los Angeles Regional Qualifier — official event photo"><p class="ev-cap">With fellow Crystal Rose cosplayers at the Riftbound LA Regional Qualifier — official event photo (Flickr)</p></div>
-<p class="ev-flow">Official Cosplayer &rarr; Three Days On Site &rarr; Official Recap &amp; Gallery</p>
-<div class="ev-narr">
-<p>The final Riftbound Regional Qualifier of 2026 brought 2,165 main-event players to the Los Angeles Convention Center. I appeared as an official League of Legends cosplayer — Ahri — on all three days of the event, and created content from the floor throughout the weekend, including a Day 3 reel that drew 2,437 likes. I also appear as Ahri in the official @RiftboundOP recap video. A personal highlight was meeting Dave Guskin, Game Director of Riftbound, who signed my card at the event.</p>
+<p class="ev-flow">Invited Guest &rarr; Three Days On Site &rarr; Official Recap &amp; Gallery</p>
+<div class="rb-top">
+<div class="rb-cover"><img src="assets/riftbound-flickr-cover.jpg" alt="Crystal Rose cosplayers at the Riftbound Los Angeles Regional Qualifier — official event photo"><p class="ev-cap">With fellow Crystal Rose cosplayers at the Riftbound LA Regional Qualifier — official event photo (Flickr)</p></div>
+<div class="rb-text">
+<p>The final Riftbound Regional Qualifier of 2026 — co-hosted by UVS Games and Riot Games — brought 2,165 main-event players to the Los Angeles Convention Center. I was invited as a UVS cosplayer guest and appeared as Ahri (League of Legends) on all three days of the event, creating content from the floor throughout the weekend, including a Day 3 reel that drew 2,437 likes. I also appear as Ahri in the official @RiftboundOP recap video.</p>
+<p>The weekend was hands-on, not just photo ops: I interacted with players across the show floor, joined in on-site matches, and learned Riftbound itself — coming away able to actually play the game I was there to represent. A personal highlight was meeting Dave Guskin, Game Director of Riftbound, who signed my card at the event.</p>
+</div>
 </div>
 <h4 class="ev-subh">Coverage &amp; official media</h4>
 <p class="ev-links"><a href="https://www.instagram.com/reel/DdzPJ2OvULD/">Day 3 reel</a> · <a href="https://www.instagram.com/p/Dd5Dmaqh9WO/">Ahri at the event</a> · <a href="https://riftboundop.com/events/regional-qualifier-los-angeles/">Official event page</a> · <a href="https://x.com/riftboundop/status/2105702997988937874">Official #RQLA recap video — X</a> · <a href="https://www.flickr.com/photos/riftbound/albums/72177720335838457/">Full event photo gallery — Flickr (527 photos)</a> · <a href="https://www.linkedin.com/feed/update/urn:li:share:7512248651260542976/">My event recap — LinkedIn</a></p>
-<div class="ev-strip">
+<div class="ev-strip rb-strip">
+<div class="ev-media big"><img src="assets/riftbound-dev.jpg" alt="With Dave Guskin, Game Director of Riftbound, at the Los Angeles Regional Qualifier"><p class="ev-cap">With Dave Guskin, Game Director of Riftbound — he signed my card at the event</p></div>
+<div class="ev-media"><img src="assets/riftbound-badges.jpg" alt="My Creator badges for the Riftbound Regional Qualifier, Los Angeles"><p class="ev-cap">My Creator badges for the Regional Qualifier</p></div>
+<div class="ev-media"><img src="assets/riftbound-cardwall.jpg" alt="The Riftbound card wall at the Los Angeles Regional Qualifier venue"><p class="ev-cap">The Riftbound card wall on the show floor</p></div>
 <div class="ev-media"><img src="assets/riftbound-reel.jpg" alt="Riftbound Los Angeles Regional Qualifier — Day 3"><p class="ev-cap">My Day 3 reel from the event floor</p></div>
-<div class="ev-media"><img src="assets/riftbound-dev.jpg" alt="With Dave Guskin, Game Director of Riftbound, at the Los Angeles Regional Qualifier"><p class="ev-cap">With Dave Guskin, Game Director of Riftbound — he signed my card at the event</p></div>
 </div></section>
 
 <section class="ev" id="cocreate">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/cocreate-main.jpg" alt="Zijian Zhou in front of the COCREATE letters at Alibaba.com CoCreate 2026, Los Angeles"></div>
+<div class="ev-img xl"><img src="assets/cocreate-main.jpg" alt="Zijian Zhou in front of the COCREATE letters at Alibaba.com CoCreate 2026, Los Angeles"></div>
 <div class="ev-title"><h3>CoCreate 2026 — Alibaba.com</h3>
 <p class="ev-role">Exhibitor · with MuseSelect</p>
 <p class="ev-sub">Alibaba.com's flagship B2B sourcing summit · 200+ exhibiting businesses</p>
@@ -118,7 +184,7 @@ section.ev{scroll-margin-top:26px}
 <p><a href="https://www.linkedin.com/posts/zijian-melody-zhou_cocreate2026-alibaba-entrepreneurship-ugcPost-7504431953484492800-VkDm/">My post from the event — LinkedIn</a></p>
 </div>
 </div>
-<div class="ev-strip">
+<div class="ev-strip sm">
 <div class="ev-media"><img src="assets/cocreate-booth.jpg" alt="At the MuseSelect booth, CoCreate 2026"><p class="ev-cap">Working the MuseSelect booth — the brand launched its U.S. Creator Fashion Market at the event</p></div>
 <div class="ev-media"><img src="assets/cocreate-venue.jpg" alt="CoCreate Los Angeles 2026 venue entrance"><p class="ev-cap">The venue entrance — CoCreate Los Angeles 2026, Los Angeles Convention Center</p></div>
 <div class="ev-media"><img src="assets/cocreate-robot.jpg" alt="Humanoid robot on the CoCreate 2026 show floor"><p class="ev-cap">On the show floor — agentic AI was the theme of the 2026 summit</p></div>
@@ -126,7 +192,7 @@ section.ev{scroll-margin-top:26px}
 
 <section class="ev" id="lcs">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/lcs-stage-wide.jpg" alt="LCS Opening Week stage, Disguised vs Shopify Rebellion — Miss Fortune on the main screen"></div>
+<div class="ev-img xl"><img src="assets/lol-mf-lcs.jpg" alt="Two official cosplayers at LCS Opening Week — Miss Fortune and Tristana"></div>
 <div class="ev-title"><h3>League of Legends — LCS Opening Week</h3>
 <p class="ev-role">Official Cosplayer · Miss Fortune</p>
 <p class="ev-sub">LCS · Esports stage appearance</p>
@@ -144,34 +210,36 @@ section.ev{scroll-margin-top:26px}
 <p><a href="https://www.instagram.com/p/DbW6tz2Gl1H/">Official LCS post</a> · <a href="https://www.instagram.com/reel/DbZYbgKC1i0/">Official LCS reel</a> · <a href="https://www.rednote.com/user/profile/5c0c73b60000000007027b06">More on Xiaohongshu</a></p>
 </div>
 </div>
-<div class="ev-strip">
+<div class="ev-strip sm">
+<div class="ev-media"><img src="assets/lcs-stage-wide.jpg" alt="LCS Opening Week stage, Disguised vs Shopify Rebellion — Miss Fortune on the main screen"><p class="ev-cap">The LCS stage during Opening Week</p></div>
 <div class="ev-media"><img src="assets/lcs-stage1.jpg" alt="Miss Fortune cosplayer on the LCS stage during Opening Week"><p class="ev-cap">On the LCS stage — official Miss Fortune for Opening Week, Poro in hand</p></div>
 <div class="ev-media"><img src="assets/lcs-screen.jpg" alt="Miss Fortune cosplayer shown on the Riot Arena main screen during champion select"><p class="ev-cap">On the arena's main screen during champion select — with me on stage at the desk (right)</p></div>
-<div class="ev-media"><img src="assets/lol-mf-lcs.jpg" alt="Miss Fortune cosplayer on the LCS stage"><p class="ev-cap">On stage for Opening Week — as featured in the official LCS post</p></div>
 </div></section>
 
 <section class="ev" id="wuwa-senior-high">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/wuwa-seniorhigh-group.jpg" alt="WuWa Senior High — classroom group shoot, Wuthering Waves cosplay campaign"></div>
+<div class="ev-img"><img src="assets/wuwa-seniorhigh-cover.jpg" alt="WuWa Senior High — in the classroom, Wuthering Waves cosplay campaign"></div>
 <div class="ev-title"><h3>Wuthering Waves — WuWa Senior High</h3>
-<p class="ev-role">Participating Cosplayer · Jinhsi</p>
-<p class="ev-sub">A fan-organized, school-themed group cosplay campaign reimagining Wuthering Waves characters as high-school students and teachers</p>
+<p class="ev-role">Invited Cosplayer Guest · Jinhsi</p>
+<p class="ev-sub">An official Wuthering Waves campaign — a school-themed group cosplay project created as version warm-up for the update introducing Aemeath</p>
 <p class="ev-loc">Organized by BunnyTuan Studio · California</p></div>
 <div class="ev-date">Apr 2026</div>
 </div>
-<p class="ev-flow">Casting &rarr; Classroom Shoot &rarr; Coordinated Hashtag Rollout</p>
+<p class="ev-flow">Guest Casting &rarr; Classroom Shoot &rarr; Coordinated Hashtag Rollout</p>
 <div class="ev-narr">
-<p>WuWa Senior High reimagined Wuthering Waves characters as high-school students and teachers, shot on a full classroom set. I played Jinhsi in a cheerleader-version look, alongside 17 characters brought to life by 18 cosplayers; the shoot was photographed by @bunnytuan_studio, @toratoracam, and @zhoucow.</p>
+<p>WuWa Senior High is an official Wuthering Waves campaign: the game's characters reimagined as high-school students and teachers, produced to warm up the upcoming version update — the one introducing the new character Aemeath. The cosplayers were invited as guests; I played Jinhsi in a cheerleader-version look, alongside 17 characters brought to life by 18 cosplayers, shot on a full classroom set by @bunnytuan_studio, @toratoracam, and @zhoucow.</p>
+</div>
+<div class="rb-top">
+<div class="rb-text">
 <p>The campaign rolled out as a coordinated multi-creator release: a full-cast reveal on organizer @bunnytuan_studio (16.6K followers; the reveal post drew 585 likes), with cast members posting their own character sets under the shared hashtag #wuwaseniorhigh — my Jinhsi set drew 177 likes.</p>
 <p class="ev-links"><a href="https://www.instagram.com/p/DXBWrcElU5u/">Full cast reveal — @bunnytuan_studio</a> · <a href="https://www.instagram.com/p/DXDtDPdFKg4/">My Jinhsi set — @_carolcina_</a> · <a href="https://www.instagram.com/explore/search/keyword/?q=%23wuwaseniorhigh">#wuwaseniorhigh — Instagram</a></p>
 </div>
-<div class="ev-strip">
-<div class="ev-media"><img src="assets/wuwa-seniorhigh-jinhsi.jpg" alt="Jinhsi cheerleader version — WuWa Senior High"><p class="ev-cap">My Jinhsi (cheerleader version) at WuWa Senior High</p></div>
+<div class="rb-side"><img src="assets/wuwa-seniorhigh-jinhsi.jpg" alt="Jinhsi cheerleader version — WuWa Senior High"><p class="ev-cap">My Jinhsi (cheerleader version) at WuWa Senior High</p></div>
 </div></section>
 
 <section class="ev" id="ggwp">
 <div class="ev-head">
-<div class="ev-plate">Riot Games</div>
+<div class="ev-img"><img src="assets/lny-janna.jpg" alt="Heaven Scale Janna — featured in Riot Games' official GGWP February 2026 cosplay gallery"></div>
 <div class="ev-title"><h3>Riot Games — GGWP February 2026 Feature</h3>
 <p class="ev-role">Featured Cosplayer · Heaven Scale Janna</p>
 <p class="ev-sub">Official Instagram feature · GGWP cosplay series</p>
@@ -184,11 +252,119 @@ section.ev{scroll-margin-top:26px}
 </div>
 </section>
 
-<p class="year">2025</p>
+<section class="ev" id="lunar-new-year">
+<div class="ev-head">
+<div class="ev-img big"><img src="assets/lny-gwen.jpg" alt="Mythmaker Gwen at Riot Games HQ — Lunar New Year"></div>
+<div class="ev-title"><h3>Riot Games — Lunar New Year Event</h3>
+<p class="ev-role">Official Cosplayer · Mythmaker Gwen</p>
+<p class="ev-sub">Creator / brand activation</p>
+<p class="ev-loc">Riot Games HQ, Los Angeles</p></div>
+<div class="ev-date">Feb 2026</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Attended as an official cosplayer in Mythmaker (paper-cut) Gwen for Riot's Lunar New Year celebration at HQ.</li>
+<li>Also photographed in Heaven Scale Janna; created and posted content from the event.</li>
+</ul></div>
+<div class="ev-col"><h4>Results &amp; Impact</h4>
+<p>A creator celebration at Riot Games headquarters for Lunar New Year, with official cosplayers featured throughout the event.</p>
+<p><a href="https://www.instagram.com/p/DU9GRgBks3a/">Mythmaker Gwen at Riot HQ</a> · <a href="https://www.instagram.com/p/DU1RsXNksDB/">Heaven Scale Janna</a> · <a href="https://www.xiaohongshu.com/discovery/item/6997d5e50000000028020cd3">My Xiaohongshu note from the event</a></p>
+</div>
+</div>
+</section>
 
+<section class="ev" id="aiko-garden">
+<div class="ev-head">
+<div class="ev-plate">AIKO Garden</div>
+<div class="ev-title"><h3>AIKO Garden — 3D Fruit Ice Cream at Asian American Expo</h3>
+<p class="ev-role">Influencer Campaign · Content &amp; Creator Coordination</p>
+<p class="ev-sub">Brand activation via Vermillion Lab LLC · Asian American Expo (AAE 2026)</p>
+<p class="ev-loc">Fairplex, Pomona, CA — Hall 5</p></div>
+<div class="ev-date">Jan 17–18, 2026</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Covered the AIKO Garden booth at Asian American Expo as a contracted creator through Vermillion Lab LLC — and helped coordinate influencer participation for the brand's expo presence.</li>
+<li>Filmed the full booth experience to the brief's shot list: tasting the TikTok-viral 3D fruit ice cream, the spin-wheel lucky draw, and staff and crowd reactions, with same-day stories from the floor.</li>
+<li>Published my expo "eatlog" reel in cosplay (Oguri Cap), with the campaign hashtags and full sponsorship disclosure.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>AIKO Garden's hyper-realistic 3D fruit ice cream was one of the expo's viral food draws. The campaign put creators inside the booth experience — tasting, games, and prizes — across the two expo days. Hashtags: #3DFruitIceCream #AIKOIceCream #AsianAmericanExpo #AAE2026.</p>
+<p><a href="https://www.instagram.com/reel/DT6qERMEeAO/">My reel from the booth — Instagram</a></p>
+</div>
+</div>
+</section>
+
+<section class="ev" id="ocm-foods">
+<div class="ev-head">
+<div class="ev-plate">OCM Foods</div>
+<div class="ev-title"><h3>OCM Foods — Shopping Spree at Asian American Expo</h3>
+<p class="ev-role">Influencer Campaign · Content &amp; Creator Coordination</p>
+<p class="ev-sub">Brand activation via Vermillion Lab LLC · Asian American Expo (AAE 2026)</p>
+<p class="ev-loc">Fairplex, Pomona, CA — Hall 5</p></div>
+<div class="ev-date">Jan 17–18, 2026</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Took on OCM Foods' "Shopping Spree" brief at the expo: receive the mega shopping bag, fill it on camera, and showcase featured products from four-plus brands.</li>
+<li>Covered booth interaction and tastings across the hall, with same-day stories and a same-night video delivered to brief.</li>
+<li>Helped coordinate influencer participation for the campaign alongside my own content, through Vermillion Lab LLC.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>A high-energy expo activation built around one visual hook — how much can one giant bag hold? — introducing OCM's Asian snack range to expo crowds through creator content. Hashtags: #ocmfoods #AsianSnacks #FoodExpo #ShoppingSpree.</p>
+<p><a href="https://www.instagram.com/reel/DTpP8QJgsnw/">My Shopping Spree reel — Instagram</a></p>
+</div>
+</div>
+</section>
+
+<p class="year">2025</p>
+<section class="ev" id="master-lee">
+<div class="ev-head">
+<div class="ev-plate">Master Lee</div>
+<div class="ev-title"><h3>Master Lee — Winter Solstice Dumpling Challenge</h3>
+<p class="ev-role">Influencer Campaign · Content &amp; Creator Coordination</p>
+<p class="ev-sub">Brand campaign via Vermillion Lab LLC · GW Supermarket</p>
+<p class="ev-loc">Temple City, CA</p></div>
+<div class="ev-date">Dec 2025</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Worked with Vermillion Lab LLC on the campaign end to end — helping coordinate influencer participation and delivering my own content to brief.</li>
+<li>Visited the Temple City store for the Winter Solstice Dumpling Challenge: filmed the in-store sampling atmosphere and worked through the sauce bar's nine-plus pairings.</li>
+<li>Built my video around the "first dumpling of Winter Solstice" tradition, demoing creative sauce combinations — published ahead of the solstice with the campaign hashtags and full sponsorship disclosure.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>A seasonal food campaign built on the Winter Solstice custom — "eat dumplings on Winter Solstice, and your ears won't freeze" — turning a supermarket sampling into a creative-sauce challenge for short-form video. Hashtags: #masterlee #masterleedumpling #WinterSolsticeDumplings #DumplingCreativity.</p>
+<p><a href="https://www.instagram.com/reel/DSdilxckiEw/">My reel — Instagram</a></p>
+</div>
+</div>
+</section>
+
+
+<section class="ev" id="acecook-haohao">
+<div class="ev-head">
+<div class="ev-plate">Acecook</div>
+<div class="ev-title"><h3>Acecook Hảo Hảo — Cosplay Creator Campaign</h3>
+<p class="ev-role">Influencer Campaign · Content &amp; Creator Coordination</p>
+<p class="ev-sub">Brand campaign via Vermillion Lab LLC · Hảo Hảo instant noodles</p>
+<p class="ev-loc">Los Angeles, CA</p></div>
+<div class="ev-date">Nov 2025</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>My first campaign with Vermillion Lab LLC — the start of an ongoing run of food-brand creator campaigns with the agency.</li>
+<li>Created a cosplay-led reel for Acecook's Hảo Hảo noodles: a "Rabbit Hole" maid Miku concept staged as a galgame scene, folding the product into the character content my audience already follows me for.</li>
+<li>Helped coordinate influencer participation for the campaign alongside my own content.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>Hảo Hảo is Acecook's flagship instant noodle brand. Instead of a straight ad read, the campaign used cosplay creators to carry the brand into ACG audiences — the product placed inside character content. This collaboration led to three further campaigns with the agency through January 2026. Hashtags: #haohao #acecook.</p>
+<p><a href="https://www.instagram.com/reel/DRqnyAokV7D/">My reel — Instagram</a></p>
+</div>
+</div>
+</section>
 <section class="ev" id="supplyside">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/niusource-booth.jpg" alt="NiuSource booth 5141 at SupplySide West 2025"></div>
+<div class="ev-img big"><img src="assets/niusource-booth.jpg" alt="NiuSource booth 5141 at SupplySide West 2025"></div>
 <div class="ev-title"><h3>SupplySide West — SupplySide Global</h3>
 <p class="ev-role">Procurement Assistant · Booth Operations Lead</p>
 <p class="ev-sub">NiuSource Inc. · Booth 5141</p>
@@ -208,30 +384,10 @@ section.ev{scroll-margin-top:26px}
 </div>
 </section>
 
-<section class="ev" id="lunar-new-year">
-<div class="ev-head">
-<div class="ev-img"><img src="assets/lny-gwen.jpg" alt="Mythmaker Gwen at Riot Games HQ — Lunar New Year"></div>
-<div class="ev-title"><h3>Riot Games — Lunar New Year Event</h3>
-<p class="ev-role">Official Cosplayer · Mythmaker Gwen</p>
-<p class="ev-sub">Creator / brand activation</p>
-<p class="ev-loc">Riot Games HQ, Los Angeles</p></div>
-<div class="ev-date">Feb 2025</div>
-</div>
-<div class="ev-cols">
-<div class="ev-col"><h4>What I Did</h4><ul>
-<li>Attended as an official cosplayer in Mythmaker (paper-cut) Gwen for Riot's Lunar New Year celebration at HQ.</li>
-<li>Also photographed in Heaven Scale Janna; created and posted content from the event.</li>
-</ul></div>
-<div class="ev-col"><h4>Results &amp; Impact</h4>
-<p>A creator celebration at Riot Games headquarters for Lunar New Year, with official cosplayers featured throughout the event.</p>
-<p><a href="https://www.instagram.com/p/DU9GRgBks3a/">Mythmaker Gwen at Riot HQ</a> · <a href="https://www.instagram.com/p/DU1RsXNksDB/">Heaven Scale Janna</a> · <a href="https://www.xiaohongshu.com/discovery/item/6997d5e50000000028020cd3">My Xiaohongshu note from the event</a></p>
-</div>
-</div>
-</section>
 
 <section class="ev" id="night-at-the-harbor">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/night-harbor.jpg" alt="Night at the Harbor — official performer announcement: CarolCina as Shenhe"></div>
+<div class="ev-img big"><img src="assets/night-harbor.jpg" alt="Night at the Harbor — official performer announcement: CarolCina as Shenhe"></div>
 <div class="ev-title"><h3>Genshin Impact — Night at the Harbor</h3>
 <p class="ev-role">Immersive Performer · Shenhe</p>
 <p class="ev-sub">A mini Genshin Impact fan event celebrating Lantern Rite, presented by UmaiGosh Entertainment × Tomogacha Con</p>
@@ -261,6 +417,7 @@ section.ev{scroll-margin-top:26px}
 </div>
 <div class="ev-narr">
 <p>As part of Kuro Games' North America creator program for Wuthering Waves, I create cosplay photography and social coverage around new characters and updates — an ongoing creator-program participation in North America.</p>
+<p>My Wuthering Waves cosplay work is collected in the Wuthering Waves section of the Cosplay Showcase page.</p>
 </div>
 </section>
 
@@ -268,7 +425,7 @@ section.ev{scroll-margin-top:26px}
 
 <section class="ev" id="genshin-halloween">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/genshin-halloween.jpg" alt="Kamisato Ayaka and Ayato at Paimon's Candy Jar — Genshin Impact Halloween at The Grove"></div>
+<div class="ev-img big"><img src="assets/genshin-halloween.jpg" alt="Kamisato Ayaka and Ayato at Paimon's Candy Jar — Genshin Impact Halloween at The Grove"></div>
 <div class="ev-title"><h3>Genshin Impact — Halloween: Paimon's Candy Jar</h3>
 <p class="ev-role">Creator · Activation — Kamisato Ayaka</p>
 <p class="ev-sub">HoYoverse's Paimon's Candy Jar Halloween activation</p>
@@ -289,7 +446,7 @@ section.ev{scroll-margin-top:26px}
 
 <section class="ev" id="blaze-to-natlan">
 <div class="ev-head">
-<div class="ev-img"><img src="assets/blaze-natlan.jpg" alt="Blaze to Natlan — Anime Club of UC Irvine announcement graphic featuring CarolCina"></div>
+<div class="ev-img big"><img src="assets/blaze-natlan.jpg" alt="Blaze to Natlan — Anime Club of UC Irvine announcement graphic featuring CarolCina"></div>
 <div class="ev-title"><h3>Genshin Impact — Blaze to Natlan</h3>
 <p class="ev-role">Genshin Impact Ambassador · Cosplayer Appearance</p>
 <p class="ev-sub">A Genshin Impact campus activation at UC Irvine's Anteater Involvement Fair, presented by the Anime Club of UC Irvine</p>
@@ -325,13 +482,19 @@ section.ev{scroll-margin-top:26px}
 <li>Promoted the recurring Sora Gumi Street Fair at Weller Court — a local artist and vendor market (art, merch, music, food) that ran in April, May, and Anime Expo weekend editions in 2023.</li>
 <li>Covered the store's convention booths (Anime Impulse San Diego, Fanime) and seasonal retail campaigns, including a Genshin Impact Ichiban Kuji that sold out, Black Friday, and holiday sales.</li>
 </ul>
-<h4 class="ev-subh">What the numbers said</h4>
-<div class="ev-narr">
-<p>Event posts consistently outperformed regular product posts on the account: the voice-actor announcement series drew 374–1,211 likes per post, versus roughly 100 for a typical product post, and the Street Fair grew from a one-off market into a recurring series.</p>
-<p class="ev-links"><a href="https://www.instagram.com/p/CpjAd_BvSlh/">Genshin Offline Gathering announcement</a> · <a href="https://www.instagram.com/p/Cplf4xYPhVc/">Corina Boettger announcement</a> · <a href="https://www.instagram.com/p/Cqly5t6vtsc/">Street Fair recap</a> · <a href="https://www.instagram.com/soragumi.co/">@soragumi.co</a></p>
-</div>
 <div class="ev-strip">
+<div class="ev-media"><img src="assets/soragumi-poster-opening1.jpg" alt="Sora Gumi Grand Opening poster — Weller Court, Sep 2022"><p class="ev-cap">Grand Opening poster — Weller Court, Little Tokyo (Sep 2022)</p></div>
+<div class="ev-media"><img src="assets/soragumi-poster-opening2.jpg" alt="Sora Gumi Grand Opening schedule poster — Weller Court, Sep 10, 2022"><p class="ev-cap">Grand Opening schedule poster — with the voice-actor guest lineup (Sep 10, 2022)</p></div>
 <div class="ev-media"><img src="assets/soragumi-streetfair.jpg" alt="Sora Gumi Street Fair poster — Little Tokyo, Apr 2023"><p class="ev-cap">Sora Gumi Street Fair poster — Weller Court, Little Tokyo (Apr 2023)</p></div>
+<div class="ev-media"><img src="assets/soragumi-anniversary.jpg" alt="SoraGumi 1st Anniversary poster — Weller Court, Sep 16, 2023"><p class="ev-cap">1st Anniversary poster — Weller Court (Sep 16, 2023)</p></div>
+</div>
+<h4 class="ev-subh">What the numbers said</h4>
+<div class="rb-top">
+<div class="rb-text">
+<p>Event posts consistently outperformed regular product posts on the account: the voice-actor announcement series drew 374–1,211 likes per post, versus roughly 100 for a typical product post, and the Street Fair grew from a one-off market into a recurring series.</p>
+<p class="ev-links"><a href="https://www.instagram.com/p/CpjAd_BvSlh/">Genshin Offline Gathering announcement</a> · <a href="https://www.instagram.com/p/Cplf4xYPhVc/">Corina Boettger announcement</a> · <a href="https://www.instagram.com/p/CiGAkNZvcw6/">Grand Opening poster</a> · <a href="https://www.instagram.com/p/CwydPyjvKIT/">1st Anniversary</a> · <a href="https://www.instagram.com/p/Cqly5t6vtsc/">Street Fair recap</a> · <a href="https://www.instagram.com/soragumi.co/">@soragumi.co</a></p>
+</div>
+<div class="rb-side" style="flex-basis:300px"><img src="assets/soragumi-visitors.jpg" alt="Visitors shopping in store at Sora Gumi"><p class="ev-cap">Visitors in store at Sora Gumi</p></div>
 </div></section>
 
 <p class="year">2022</p>
@@ -339,15 +502,35 @@ section.ev{scroll-margin-top:26px}
 
 <section class="ev" id="riotling-day">
 <div class="ev-head">
-<div class="ev-plate">Riot Games</div>
+<div class="ev-img"><img src="assets/riotling-gwen.jpg" alt="Gwen at Riot Games HQ for Riotling Day 2022, in front of the Tibbers statue"></div>
 <div class="ev-title"><h3>Riot Games — Riotling Day</h3>
-<p class="ev-role">Creator · Brand Activation</p>
-<p class="ev-sub">Creator / brand activation</p>
-<p class="ev-loc">Riot Games</p></div>
+<p class="ev-role">Cosplayer · Guest Appearance</p>
+<p class="ev-sub">Riot Games HQ family open day</p>
+<p class="ev-loc">Riot Games HQ, Los Angeles</p></div>
 <div class="ev-date">2022</div>
 </div>
 <div class="ev-narr">
-<p>An early creator activation with Riot Games — participation and content as a gaming creator.</p>
+<p>Riotling Day is Riot Games' family open day at its Los Angeles headquarters, where Rioters invite their family and friends to visit the campus. I attended as a League of Legends cosplayer (Gwen) — greeting guests, posing for photos with visitors, and creating content and photoshoots around HQ, the same kind of player-facing appearance as my later Lunar New Year visit.</p>
+</div>
+</section>
+
+<section class="ev" id="eipi">
+<div class="ev-head">
+<div class="ev-plate">EIPI</div>
+<div class="ev-title"><h3>EIPI Inc. — Social Media Intern</h3>
+<p class="ev-role">Social Media Operations</p>
+<p class="ev-sub">ACG merchandise retail</p></div>
+<div class="ev-date">Sep – Dec 2022</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>What I Did</h4><ul>
+<li>Ran day-to-day social media operations: ensuring posts published on schedule, analyzing traffic, and editing the brand's own content.</li>
+<li>Tracked new ACG merchandise releases to time content around product drops.</li>
+<li>Built the brand's foundational Instagram and TikTok presence.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>EIPI is an ACG merchandise retailing company. I was recruited under graphic design, but the work itself was social media operations — my first professional social media role.</p>
+</div>
 </div>
 </section>
 
@@ -403,5 +586,16 @@ section.ev{scroll-margin-top:26px}
 </div>
 </div>
 </main>
-<footer>Zijian Zhou · Los Angeles, CA · zhouzijian2001@gmail.com · <a href="https://www.linkedin.com/in/zijian-melody-zhou">LinkedIn</a> · <a href="https://github.com/zijian-melody-zhou">GitHub</a></footer>
+<footer class="site-foot">
+<div class="foot-main">
+<div class="foot-brand"><p class="foot-name">Zijian Zhou</p><p class="foot-tag">Social Media · Community &amp; Creator Operations<br>Los Angeles, CA</p></div>
+<div class="foot-links">
+<a href="mailto:zhouzijian2001@gmail.com">Email &#8599;</a>
+<a href="https://www.linkedin.com/in/zijian-melody-zhou">LinkedIn &#8599;</a>
+<a href="https://github.com/zijian-melody-zhou">GitHub &#8599;</a>
+<a href="https://www.instagram.com/_carolcina_/">Instagram &#8599;</a>
+</div>
+</div>
+<div class="foot-bar"><span>Zijian Zhou</span><span>Social Media &amp; Creator Operations</span><a href="#top">Back to top &#8593;</a></div>
+</footer>
 </body></html>

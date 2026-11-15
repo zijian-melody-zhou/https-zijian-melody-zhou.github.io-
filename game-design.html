@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Game Design — Zijian Zhou</title><link rel="stylesheet" href="styles.css"><style>
 body{background:#f7f3ec}
-main{max-width:1060px}
+main{max-width:none;padding:28px 10px 48px}
 .ev{border-top:1px solid #d9d2c4;padding:34px 0 30px}
 .ev:last-of-type{border-bottom:1px solid #d9d2c4}
 .ev-head{display:flex;gap:28px;align-items:flex-start}
@@ -19,46 +19,175 @@ main{max-width:1060px}
 .ev-col ul{margin:0;padding-left:18px}
 .ev-col li{margin-bottom:8px}
 .ev-col p{margin:0 0 10px}
-.year{font-size:13px;letter-spacing:.25em;color:#8a8172;text-transform:uppercase;margin:44px 0 4px}
-.year:first-of-type{margin-top:26px}
-@media(max-width:760px){.ev-head{flex-wrap:wrap}.ev-plate{flex:1 1 100%}.ev-date{padding-top:0}.ev-cols{flex-direction:column;gap:20px}}
+.gd-layout{display:flex;gap:38px;align-items:flex-start}
+.gd-toc{flex:0 0 235px;position:sticky;top:26px;border-right:1px solid #ddd4c2;padding-right:20px}
+.gd-toc h4{font-size:11px;letter-spacing:.24em;color:#8a8172;text-transform:uppercase;margin:0 0 14px;font-weight:600}
+.gd-toc a{display:block;color:#444;text-decoration:none;font-size:14px;padding:5px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gd-toc a:hover{color:#a03d2a}
+.gd-main{flex:1;min-width:0;max-width:1060px}
+@media(max-width:760px){.ev-head{flex-wrap:wrap}.ev-plate{flex:1 1 100%}.ev-date{padding-top:0}.ev-cols{flex-direction:column;gap:20px}.gd-layout{flex-direction:column;gap:10px}.gd-toc{position:static;border-right:none;border-bottom:1px solid #ddd4c2;padding:0 0 12px;flex:1 1 auto;width:100%}.gd-toc a{white-space:normal}}
+
+.ev-img{flex:0 0 300px}
+.ev-img img{width:100%;height:auto;display:block}
+.ev-banner-sm{margin-top:14px;max-width:520px}
+.ev-banner-sm img{width:100%;height:auto;display:block}
+.gd-media{margin-top:24px}
+.gd-row{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.gd-row figure{margin:0;min-width:0}
+.gd-row img{width:100%;height:auto;display:block}
+.gd-cap{font-size:12px;color:#8a8172;margin-top:6px;letter-spacing:.05em}
+.gd-dark{background:#141a14;padding:10px}
+@media(max-width:760px){.gd-row{flex-wrap:wrap}.gd-row figure{flex:1 1 100%!important}}
 </style></head>
-<body><header class="site"><nav><a class="brand" href="index.html">ZIJIAN ZHOU</a><a href="index.html">Home</a><a href="social-media.html">Social Media</a><a href="events.html">Campaigns & Events</a><a href="game-design.html" class="active">Game Design</a><a href="cosplay.html">Cosplay</a><a href="art.html">Art</a></nav></header>
+<body><header class="site" id="top"><nav><a class="brand" href="index.html">ZIJIAN ZHOU</a><a href="index.html">Home</a><a href="events.html">Campaigns & Events</a><a href="game-design.html" class="active">Game Design</a><a href="cosplay.html">Cosplay Showcase</a><a href="art.html">Art Portfolio</a></nav></header>
 <main>
+<div class="gd-layout">
+<nav class="gd-toc">
+<h4>Projects</h4>
+<a href="#cloudia">Cloudia — That Game Jam</a>
+<a href="#a-book-of-magic">A Book of Magic</a>
+<a href="#yuxiang">余响 — BooomJam</a>
+<a href="#resurgence-of-horrors">Resurgence of Horrors (ROH)</a>
+<a href="#my-house-of-horror">My House of Horror</a>
+</nav>
+<div class="gd-main">
 <h1>Game Design</h1>
-<p class="lede">Selected game projects — design, art direction, concept art, and production, from UC Irvine coursework to an independent project in development.</p>
+<p class="lede">Selected game projects — design, art direction, concept art, and production: game jams, UC Irvine coursework, and independent projects in development.</p>
+<p class="gd-statement">What I love most is players' passion — the way a game stays with people long after they stop playing. Building experiences that deserve that passion is what makes this work meaningful to me, and it is why I keep learning every craft behind a game, from art to systems to production, on my way to directing projects of my own.</p>
+
 <div class="note">Background: A.A. in Game and Interactive Media Design, Mt. San Antonio College (2021), with a Certificate of Junior Level Game Designer · B.A. in Art (Minor in Digital Arts), UC Irvine (2024).</div>
 
-<p class="year">Selected Work</p>
-
-<section class="ev">
+<section class="ev" id="cloudia">
 <div class="ev-head">
-<div class="ev-plate">01 · Horror</div>
-<div class="ev-title"><h3>Resurgence of Horrors</h3>
-<p class="ev-role">3D / 2D Artist · Concept Art</p>
-<p class="ev-sub">Graduation game project · Team of 18</p>
-<p class="ev-loc">University of California, Irvine</p></div>
-<div class="ev-date">UC Irvine</div>
+<div class="ev-img"><img src="assets/cloudia-cover.jpg" alt="Cloudia — key art"></div>
+<div class="ev-titles">
+<div class="ev-date">Fall 2026</div>
+<h3>Cloudia</h3>
+<p class="ev-role">Sole Artist · UI Design &amp; AI Art Direction</p>
+<p class="ev-sub">That Game Jam · two-week jam · team of three</p>
+<p class="ev-loc">itch.io · Windows</p>
+<img class="ev-banner-sm" src="assets/cloudia-banner.jpg" alt="Cloudia banner art">
+</div>
+</div>
+<div class="gd-media">
+<div class="gd-row"><figure style="flex:1"><img src="assets/cloudia-ui-1.jpg" alt="Cloudia game UI — difficulty panel"><figcaption class="gd-cap">Game UI — difficulty panel</figcaption></figure><figure style="flex:1"><img src="assets/cloudia-ui-2.jpg" alt="Cloudia game UI — main menu"><figcaption class="gd-cap">Game UI — main menu</figcaption></figure></div>
+<p class="gd-cap" style="margin-top:2px">The game's UI is designed and made entirely by hand.</p>
+<div class="gd-row"><figure style="flex:15.339"><img src="assets/cloudia-level-1.jpg" alt="Lighthouse coast — withered → restored"><figcaption class="gd-cap">Lighthouse coast — withered → restored</figcaption></figure><figure style="flex:15.339"><img src="assets/cloudia-level-2.jpg" alt="Lotus pond — withered → restored"><figcaption class="gd-cap">Lotus pond — withered → restored</figcaption></figure><figure style="flex:15.339"><img src="assets/cloudia-level-3.jpg" alt="Garden — withered → restored"><figcaption class="gd-cap">Garden — withered → restored</figcaption></figure><figure style="flex:12.881"><img src="assets/cloudia-level-4.jpg" alt="Windmill farmland — withered → restored"><figcaption class="gd-cap">Windmill farmland — withered → restored</figcaption></figure><figure style="flex:12.881"><img src="assets/cloudia-level-5.jpg" alt="Snow valley — withered → restored"><figcaption class="gd-cap">Snow valley — withered → restored</figcaption></figure><figure style="flex:12.881"><img src="assets/cloudia-level-6.jpg" alt="Desert oasis — withered → restored"><figcaption class="gd-cap">Desert oasis — withered → restored</figcaption></figure><figure style="flex:15.339"><img src="assets/cloudia-level-7.jpg" alt="Floating village — withered → restored"><figcaption class="gd-cap">Floating village — withered → restored</figcaption></figure></div>
+<p class="gd-cap" style="margin-top:2px">Level environments, withered → restored — about 70% AI-generated with models I trained and ran myself.</p>
 </div>
 <div class="ev-cols">
 <div class="ev-col"><h4>My Role</h4><ul>
-<li>Created 3D and 2D art and concept art for the project's demo.</li>
-<li>Worked as part of an 18-person development team on the game design major's graduation project.</li>
+<li>Sole artist on a three-person team — all art direction and production, in two weeks.</li>
+<li>Designed and hand-made the game's entire UI.</li>
+<li>Trained and ran my own AI image models to produce the level environments, directing them into one consistent style across seven regions, each in withered and restored states.</li>
 </ul></div>
 <div class="ev-col"><h4>About</h4>
-<p>The graduation project won <strong>first place of the school year</strong> at UC Irvine. Project page and playable build available on request.</p>
+<p>A cozy little game about gathering clouds and bringing life back to the world. As a cloud maker, you guide the wind — click and drag to make gusts — merge drifting clouds, and send rain to the regions that need it, watching each land bloom again. No failure, no time pressure — just breeze and rain.</p>
+<p style="font-size:.82rem;margin-top:8px">Play on itch.io: <a href="https://shubingzhou.itch.io/cloudia" target="_blank" rel="noopener">shubingzhou.itch.io/cloudia</a></p>
 </div>
 </div>
 </section>
 
-<section class="ev">
+<section class="ev" id="a-book-of-magic">
 <div class="ev-head">
-<div class="ev-plate">02 · Horror</div>
+<div class="ev-img"><img src="assets/bookmagic-shelf.jpg" alt="A Book of Magic — spell-book shelf illustration"></div>
+<div class="ev-title"><h3>A Book of Magic</h3>
+<p class="ev-role">Producer · Artist</p>
+<p class="ev-sub">Indie puzzle game</p>
+<p class="ev-loc">University of California, Irvine</p></div>
+<div class="ev-date">Fall 2025 – Present</div>
+</div>
+<div class="gd-media">
+<div class="gd-row">
+<figure style="flex:1"><img src="assets/bookmagic-egg.jpg" alt="A Book of Magic — dragon egg and cushion illustration"><figcaption class="gd-cap">Content illustration — dragon egg &amp; cushion</figcaption></figure>
+<figure style="flex:1"><img src="assets/bookmagic-bottles.jpg" alt="A Book of Magic — potion shelf illustration"><figcaption class="gd-cap">Content illustration — potion shelf</figcaption></figure>
+</div>
+<div class="gd-row">
+<figure style="flex:1"><img src="assets/bookmagic-gems.jpg" alt="A Book of Magic — gem box illustration"><figcaption class="gd-cap">Content illustration — gem box</figcaption></figure>
+<figure style="flex:0 0 190px"><div class="gd-dark"><img src="assets/bookmagic-watch.png" alt="A Book of Magic — pocket watch illustration"></div><figcaption class="gd-cap">Content illustration — pocket watch</figcaption></figure>
+</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>My Role</h4><ul>
+<li>Planning and coordinating the project end to end — concept development, production schedules, and quality requirements — and tracking milestones and deliverables against the timeline.</li>
+<li>Playtesting and iterating on the design based on player feedback.</li>
+<li>Creating all of the game's content illustrations — the spell-book shelf, dragon egg, potion shelf, gem box, and pocket watch shown here.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>An indie puzzle game, produced and illustrated by me. Project materials available on request.</p>
+</div>
+</div>
+</section>
+
+<section class="ev" id="yuxiang">
+<div class="ev-head">
+<div class="ev-img"><img src="assets/yuxiang-cover.jpg" alt="余响 — cover art"></div>
+<div class="ev-title"><h3>余响</h3>
+<p class="ev-role">Background Illustration · Game Art</p>
+<p class="ev-sub">BooomJam · Single-player Roguelite · Windows / Steam</p>
+<p class="ev-loc">Game jam</p>
+<div class="ev-banner-sm"><img src="assets/yuxiang-banner.jpg" alt="余响 — banner art"></div></div>
+<div class="ev-date">Spring 2025</div>
+</div>
+<div class="gd-media">
+<div class="gd-row">
+<figure style="flex:1"><img src="assets/yuxiang-bg-night.jpg" alt="余响 background illustration — night lake"><figcaption class="gd-cap">Background illustration — night lake (my work)</figcaption></figure>
+<figure style="flex:1"><img src="assets/yuxiang-bg-desert.jpg" alt="余响 background illustration — desert ruins"><figcaption class="gd-cap">Background illustration — desert ruins (my work)</figcaption></figure>
+</div>
+<div class="gd-row">
+<figure style="flex:1"><div class="gd-dark"><img src="assets/yuxiang-plants.png" alt="余响 — rainforest map plant asset set"></div><figcaption class="gd-cap">Rainforest map — plant asset set (my work)</figcaption></figure>
+<figure style="flex:0 0 190px"><img src="assets/yuxiang-ui.jpg" alt="余响 — character and animal window UI design"><figcaption class="gd-cap">Character &amp; animal window — UI design</figcaption></figure>
+</div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>My Role</h4><ul>
+<li>Created the game's background illustrations, including the night-lake and desert-ruins scenes.</li>
+<li>Drew the rainforest map's plant asset set.</li>
+<li>Designed the character &amp; animal window UI — hover and dark states, skill and pet panels.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>A single-player, side-scrolling Roguelite of cute animals and bullet-hell combat. The protagonist descends into this world and, out of compassion for its creatures, gives up their own power to bring them strength and hope. Sensing the sacrifice, the creatures join the party of their own free will, their strength rolling in like a tide — together they &ldquo;purify&rdquo; the planet, and lift the protagonist high. (DEMO, about 30 minutes; still in active development.)</p>
+<p style="font-size:13px;color:#777">Game page (Chinese): <a href="https://www.gcores.com/games/148145" target="_blank" rel="noopener">GCORES — 余响</a></p>
+</div>
+</div>
+</section>
+
+<section class="ev" id="resurgence-of-horrors">
+<div class="ev-head">
+<div class="ev-img"><img src="assets/roh-cover.jpg" alt="Resurgence of Horrors — key visual"></div>
+<div class="ev-titles">
+<div class="ev-date">Fall 2024 – Spring 2025</div>
+<h3>Resurgence of Horrors</h3>
+<p class="ev-role">3D / 2D Artist · Concept Art</p>
+<p class="ev-sub">UC Irvine graduation project (ROH) · 3D top-down survival horror</p>
+<p class="ev-loc">University of California, Irvine</p>
+</div>
+</div>
+<div class="gd-media">
+<div class="gd-row"><figure style="flex:1"><img src="assets/roh-fog.jpg" alt="Concept art — Ghost Fog"><figcaption class="gd-cap">Concept art — Ghost Fog, a Revenant</figcaption></figure><figure style="flex:1"><img src="assets/roh-knocker.jpg" alt="Concept art — the Knocker"><figcaption class="gd-cap">Concept art — the Knocker, a Revenant</figcaption></figure></div>
+<div class="gd-row"><figure style="flex:1"><img src="assets/roh-shot-1.jpg" alt="In-game still — lantern tree"><figcaption class="gd-cap">In-game — the lantern tree</figcaption></figure><figure style="flex:1"><img src="assets/roh-shot-2.jpg" alt="In-game still — house exterior"><figcaption class="gd-cap">In-game — house exterior</figcaption></figure><figure style="flex:1"><img src="assets/roh-shot-3.jpg" alt="In-game still — the red gate"><figcaption class="gd-cap">In-game — the red gate</figcaption></figure></div>
+</div>
+<div class="ev-cols">
+<div class="ev-col"><h4>My Role</h4><ul>
+<li>My largest project — a year-long graduation production with a team of 18, awarded first place of the school year at UC Irvine.</li>
+<li>Concept art for the game's Revenants — the spirits that drive its horror — and for environment atmosphere and mood.</li>
+<li>Produced 3D and 2D art assets for the game.</li>
+</ul></div>
+<div class="ev-col"><h4>About</h4>
+<p>An ordinary person is caught in a paranormal event and learns of the Revenants — spirits from the other world that cause supernatural phenomena by fixed rules. They repeat their actions mechanically and attack anyone who meets their conditions; the player must stay calm, read each Revenant's pattern, and use everything at hand to escape. Built around exploration and a chain of puzzles — keys, a long candle, a coded box, a coffin — with 30 collectible achievements: diaries, hidden dialogues, items, and nine different deaths. Third-person, with an experimental first-person mode.</p>
+<p style="font-size:.82rem;margin-top:8px">Play on itch.io: <a href="https://iamayem.itch.io/resurgence-of-horrors" target="_blank" rel="noopener">iamayem.itch.io/resurgence-of-horrors</a></p>
+</div>
+</div>
+</section>
+
+<section class="ev" id="my-house-of-horror">
+<div class="ev-head">
+<div class="ev-img"><img src="assets/househorror-characters.jpg" alt="My House of Horror — character concept designs"></div>
 <div class="ev-title"><h3>My House of Horror</h3>
 <p class="ev-role">Lead Art Director · Concept Artist</p>
 <p class="ev-sub">Student project · Art team of 5</p>
 <p class="ev-loc">University of California, Irvine</p></div>
-<div class="ev-date">UC Irvine</div>
+<div class="ev-date">Summer 2022</div>
 </div>
 <div class="ev-cols">
 <div class="ev-col"><h4>My Role</h4><ul>
@@ -66,52 +195,24 @@ main{max-width:1060px}
 <li>Created concept designs and led an art team of five students.</li>
 </ul></div>
 <div class="ev-col"><h4>About</h4>
-<p>A student horror project built around a single-house setting, with a dedicated five-person art team. Project materials available on request.</p>
+<p>A student horror project built around a single-house setting, with a dedicated five-person art team. The project was ultimately not completed; the character concept sheet above is the art that remains from it.</p>
 </div>
 </div>
 </section>
 
-<section class="ev">
-<div class="ev-head">
-<div class="ev-plate">03 · Design</div>
-<div class="ev-title"><h3>A Book of Magic</h3>
-<p class="ev-role">Lead Designer · Project Manager</p>
-<p class="ev-sub">Student project</p>
-<p class="ev-loc">University of California, Irvine</p></div>
-<div class="ev-date">UC Irvine</div>
-</div>
-<div class="ev-cols">
-<div class="ev-col"><h4>My Role</h4><ul>
-<li>Led the game's design as lead designer.</li>
-<li>Managed the project end to end — scope, schedule, and team coordination.</li>
-</ul></div>
-<div class="ev-col"><h4>About</h4>
-<p>A student project where I combined design leadership with full project management. Project materials available on request.</p>
 </div>
 </div>
-</section>
-
-<section class="ev">
-<div class="ev-head">
-<div class="ev-plate">04 · In Development</div>
-<div class="ev-title"><h3>Indie Social Game</h3>
-<p class="ev-role">Producer · Systems Design</p>
-<p class="ev-sub">Personal project · Independent</p>
-<p class="ev-loc">Los Angeles, CA</p></div>
-<div class="ev-date">Sep 2025 – Present</div>
-</div>
-<div class="ev-cols">
-<div class="ev-col"><h4>My Role</h4><ul>
-<li>Designing core systems — role development, level progression, and multiplayer mechanics.</li>
-<li>Building around player-driven content creation as the central loop.</li>
-<li>Playtesting and iterating on systems based on player feedback.</li>
-</ul></div>
-<div class="ev-col"><h4>About</h4>
-<p>An independent social game in development, produced and designed by me. This page will grow into a full case study as development progresses.</p>
-</div>
-</div>
-</section>
-
 </main>
-<footer>Zijian Zhou · Los Angeles, CA · zhouzijian2001@gmail.com · <a href="https://www.linkedin.com/in/zijian-melody-zhou">LinkedIn</a> · <a href="https://github.com/zijian-melody-zhou">GitHub</a></footer>
+<footer class="site-foot">
+<div class="foot-main">
+<div class="foot-brand"><p class="foot-name">Zijian Zhou</p><p class="foot-tag">Social Media · Community &amp; Creator Operations<br>Los Angeles, CA</p></div>
+<div class="foot-links">
+<a href="mailto:zhouzijian2001@gmail.com">Email &#8599;</a>
+<a href="https://www.linkedin.com/in/zijian-melody-zhou">LinkedIn &#8599;</a>
+<a href="https://github.com/zijian-melody-zhou">GitHub &#8599;</a>
+<a href="https://www.instagram.com/_carolcina_/">Instagram &#8599;</a>
+</div>
+</div>
+<div class="foot-bar"><span>Zijian Zhou</span><span>Social Media &amp; Creator Operations</span><a href="#top">Back to top &#8593;</a></div>
+</footer>
 </body></html>
